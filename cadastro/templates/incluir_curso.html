@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load bootstrap5 %}
+     <h2>Página de Curso</h2>
+     <form method="post">
+            {% bootstrap_form form %}
+            {% csrf_token %}
+         <input type="submit" value="Gravar" class="btn btn-primary"/>
+     </form>
+{% endblock %}
